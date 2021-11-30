@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+html,body {
+    width: 100%;
+    min-width: 500px;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    background-color: #dcdcdc;
+    text-align: center;
+}
+
+.center {
+    width: 80%;
+    display: inline-block;
+}
+
+.logo-1 {
+    margin: 10px 20px;
+    background-image:url(imagens/logo1.png) ;
+    width: 160px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.logo-2 {
+    margin: 10px 20px;
+    background-image:url(imagens/logo2.png) ;
+    width: 160px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    
+    [class^="logo"] {
+        display: inline-block;
+        float: none;
+        background-position-x: 50%;
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+main {
+    text-align: center;
+}
+
+.bg-form {
+    background-image: url(imagens/bg-form.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-form {
+    float: right;
+    width: 40%;
+    margin-top: 80px;
+    margin-right: 40px;
+    background-color: rgba(220, 220, 220, 0.6);
+}
+
+h3 {
+    background-color: rgba(220, 220, 220, 1);
+    padding: 20px;
+    font-weight: 300;
+}
+
+form {
+    padding-top: 30px;
+}
+
+form input[type="text"] {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+
+form > input[type='text']:not(.last) {
+    margin-bottom: 20px;
+}
+
+.span {
+    text-align: left;
+    margin-left: 10%;
+    padding: 5px 10px;
+    width: 80%;
+}
+
+form input[type="submit"] {
+    margin: 20px 0px;
+    width: 50%;
+    height: 40px;
+}
+
+.bg-form img {
+    position: relative;
+    top: 95%;
+    left: 20%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container-form {
+        margin-top: 70px;
+        width: 80%;
+    }
+
+    .bg-form img {
+        top: 15%;
+        left: 0%;
+    }
+}
+
+.texto-seta {
+    background-color: #dcdcdc;
+    padding: 40px 20px;
+}
+
+.texto-seta h1 {
+    word-spacing: 10px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.texto-seta p {
+    word-spacing: 10px;
+    font-weight: 100;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.descricao {
+    margin-top: 2px;
+}
+
+.img-1-container {
+    text-align: center;
+    background-color: rgb(231, 247, 244);
+    height: 300px;
+}
+
+.img-2-container, .img-3-container, .img-4-container {
+    text-align: center;
+    background-color: rgb(231, 247, 244);
+    height: 300px;
+    margin-top: 5px;
+}
+
+.img-1-container p {
+    display: inline-block;
+    width: 30%;
+    margin-top: 11%;
+}
+
+.img-2-container p {
+    display: inline-block;
+    width: 30%;
+    margin-top: 8%;
+}
+
+.img-3-container p {
+    display: inline-block;
+    width: 30%;
+    margin-top: 9%;
+}
+
+.img-4-container p {
+    display: inline-block;
+    width: 30%;
+    margin-top: 11%;
+  }
+
+.img-1 {
+    background-image: url(imagens/mosaico1.jpg);
+    width: 60%;
+    height: 300px;
+    background-size: cover;
+    background-position: center ;
+    float: right;
+}
+
+.img-2 {
+    background-image: url(imagens/mosaico2.jpg);
+    width: 60%;
+    height: 300px;
+    background-size: cover;
+    background-position: center ;
+    float: left;
+}
+
+.img-3 {
+    background-image: url(imagens/mosaico3.jpg);
+    width: 60%;
+    height: 300px;
+    background-size: cover;
+    background-position: center ;
+    float: right;
+}
+
+.img-4 {
+    background-image: url(imagens/mosaico4.jpg);
+    width: 60%;
+    height: 300px;
+    background-size: cover;
+    background-position: center ;
+    float: left;
+}
+
+footer {
+    margin: 20px 0px;
+    text-align: center;
+    color: #8b8b8b;
+}
+
+@media screen and (max-width: 850px) {
+
+    .img-1-container, .img-2-container, .img-3-container, .img-4-container {
+        height: 450px;
+    }
+
+    .img-1, .img-2, .img-3, .img-4 {
+        width: 100%;
+        float: top;
+    }
+
+    .img-2-container p {
+        width: 90%;
+        margin-top: 4%;
+    }
+
+    .img-3-container p {
+        width: 90%;
+        margin-top: 4%;
+    }
+
+    .img-4-container p {
+        width: 90%;
+        margin-top: 4%;
+    }
+
+    .img-1-container p {
+        width: 90%;
+        margin-top: 4.5%;
+    }
+
+}
